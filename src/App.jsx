@@ -6,6 +6,7 @@ import NavBar from "./components/navbar/NavBar.jsx";
 import HeaderSection from "./components/header/HeaderSection.jsx";
 import WensiteTempleteSection from "./components/websiteTemplete/WensiteTempleteSection.jsx";
 import PromotionSection from "./components/promotion/PromotionSection.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const App = () => {
     return <div>
@@ -13,6 +14,7 @@ const App = () => {
         <HeaderSection />
         <WensiteTempleteSection />
         <PromotionSection />
+        <Footer />
 
     </div>;
 };
