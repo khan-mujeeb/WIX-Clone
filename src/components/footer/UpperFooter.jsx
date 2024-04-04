@@ -1,15 +1,14 @@
 // import componenets 
-import footer from "../../data";
+import {footer} from "../../data";
 import Accordion from "../common/Accordion";
+import Logo from "../common/Logo.jsx";
 
-// import assets
-import logo from "../../assets/logo.svg"; 
 
 const UpperFooter = () => {
     return (
-        <footer className="">
+        <footer className="w-full footer-padding">
             {/* desktop footer  */}
-            <div className="   grid grid-cols-1 md:max-lg:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:max-3xl:grid-cols-6 gap-5 ">
+            <div className=" w-full  grid grid-cols-1 md:max-lg:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:max-3xl:grid-cols-6 gap-5 ">
                 {footer.upperFooter.map((column, index) => (
                     <div key={index}>
                         <div className="footer-column hidden md:block">
@@ -26,8 +25,13 @@ const UpperFooter = () => {
                 ))}
 
                 <div className=" flex flex-col gap-10">
-                    <img className="w-20" src={logo} alt="logo" />
+
+                    {/* logo */}
+                    <Logo />
+
+                    {/* about */}
                     <p className="text-gray-900">{footer.about}</p>
+                    
                 </div>
             </div>
 

@@ -1,14 +1,18 @@
-import React from "react";
+// import components
 import UpperFooter from "./UpperFooter.jsx";
+import DividerLine from "../common/DividerLine.jsx";
+import LowerFooter from "./LowerFooter.jsx";
 
 const Footer = () => {
-    return <footer className=" px-10 lg:px-36 py-10 ">
+    return <footer className="w-full   ">
         
         {/* upper footer  */}
         <UpperFooter />
 
+        <DividerLine className={`w-full`}/>
+
         {/* lower footer */}
-        <div></div>
+        <LowerFooter />
     </footer>;
 };
 

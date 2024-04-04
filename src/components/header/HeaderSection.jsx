@@ -12,7 +12,7 @@ const HeaderSection = () => {
         <section className=" border border-gray-200">
             <div className="flex justify-between h-32 items-center  common-horizontal-padding">
                 {/* subtitle  */}
-                <h1 className=" text-3xl font-semibold">
+                <h1 className=" text-4xl font-bold">
                     Pick the Website Template You Love
                 </h1>
 
