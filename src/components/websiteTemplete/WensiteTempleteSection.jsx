@@ -18,7 +18,7 @@ const WensiteTempleteSection = () => {
                 </h2>
 
                 {/* dropdown */}
-                <div className="flex items-center">
+                <div className="sm:flex items-center hidden sm:visible">
                     <p className="mr-2">Sort by</p>
                     <select className="px-2 py-1 rounded-md outline-none">
                         <option value="recommendation">Recommendation</option>

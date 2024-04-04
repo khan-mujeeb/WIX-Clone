@@ -14,11 +14,11 @@ const NavBar = () => {
     const [isExpanded, toggleExpansion] = useState(false);
 
     return (
-        <nav className="flex nav-height  items-center justify-between flex-wrap bg-white p-6">
+        <nav className="flex nav-height  items-center justify-between flex-wrap bg-white px-6">
             
 
             {/* logo */}
-            <Logo />
+            <Logo className={`w-10 md:w-14 xl:w-16`} />
 
             {/* hamburger */}
 
@@ -34,7 +34,7 @@ const NavBar = () => {
             <div
                 className={`${
                     isExpanded ? `block` : `hidden`
-                } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+                } w-full block flex-grow lg:flex lg:items-center lg:w-auto bg-white`}
             >
                 <div className="ml-6 flex gap-5 text-sm lg:flex-grow">
                     {/* map idhar aaeyega  */}

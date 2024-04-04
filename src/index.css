@@ -39,7 +39,7 @@ canvas {
         @apply lg:max-3xl:h-[calc(100vh-72px)] h-[calc(100vh-54px)];
     } */
     .nav-height {
-        @apply lg:max-3xl:h-[72px] h-[54px];
+        @apply lg:h-[72px] h-[54px];
     }
 
     .footer-padding {

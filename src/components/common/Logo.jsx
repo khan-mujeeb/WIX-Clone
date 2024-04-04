@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 
-const Logo = () => {
-    return <img className=" w-16" src={logo} alt="logo" />;
+const Logo = ({className}) => {
+    return <img className={`w-16 ${className}`} src={logo} alt="logo" />;
 };
 
 export default Logo;

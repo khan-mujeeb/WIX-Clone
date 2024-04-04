@@ -1,4 +1,9 @@
+// import libraries
 import { useState } from "react";
+
+
+
+
 const Accordion = ({ items }) => {
     const [openIndex, setOpenIndex] = useState(null);
 

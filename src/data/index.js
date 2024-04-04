@@ -106,7 +106,7 @@ const navbar = [
 
 const middleNavbar = [
     {
-        title: "Business & Services",
+        title: "Business  & Services",
         items: [
             "Business",
             "Consulting & Coaching",

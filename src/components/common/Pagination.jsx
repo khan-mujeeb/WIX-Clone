@@ -11,7 +11,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             pages.push(
                 <button
                     key={i}
-                    className={`px-3 py-1 mx-1 rounded-md ${
+                    className={`px-1 sm:px-3 py-1 mx-1 rounded-md ${
                         i === currentPage
                             ? "text-black text-bold"
                             : "bg-white text-gray-600 hover:text-blue-500"
@@ -27,7 +27,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             pages.unshift(
                 <button
                     key={1}
-                    className="px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-100"
+                    className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-100"
                     onClick={() => onPageChange(1)}
                 >
                     1
@@ -35,14 +35,14 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             );
             if (start > 2) {
                 pages.unshift(
-                    <button key="prev" className="px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage - 1)}>
+                    <button key="prev" className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage - 1)}>
                         {"<"}
                     </button>
                 );
             }
             if (start > 3) {
                 pages.unshift(
-                    <span key="ellipses" className="px-3 py-1 mx-1">
+                    <span key="ellipses" className="px-1 sm:px-3 py-1 mx-1">
                         ...
                     </span>
                 );
@@ -52,7 +52,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         if (end < totalPages) {
             if (end < totalPages - 1) {
                 pages.push(
-                    <span key="ellipses" className="px-3 py-1 mx-1">
+                    <span key="ellipses" className="px-1 sm:px-3 py-1 mx-1">
                         ...
                     </span>
                 );
@@ -61,7 +61,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
                 pages.push(
                     <button
                         key={totalPages}
-                        className="px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500"
+                        className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500"
                         onClick={() => onPageChange(totalPages)}
                     >
                         {totalPages}
@@ -70,7 +70,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             }
 
             pages.push(
-                <button key="next" className="px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage + 1)}>
+                <button key="next" className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage + 1)}>
                     {">"}
                 </button>
             );
@@ -80,15 +80,15 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     };
 
     return (
-        <div className="flex justify-center my-4 text-xl py-32">
+        <div className="flex justify-center my-4 text-sm sm:text-xl py-32">
             {currentPage > 1 && (
-                <button className="px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage - 1)}>
+                <button className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage - 1)}>
                     {"<<"}
                 </button>
             )}
             {renderPages()}
             {currentPage < totalPages && (
-                <button className="px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage + 1)}>
+                <button className="px-1 sm:px-3 py-1 mx-1 rounded-md bg-white text-gray-600 hover:text-blue-500" onClick={() => onPageChange(currentPage + 1)}>
                     {">>"}
                 </button>
             )}

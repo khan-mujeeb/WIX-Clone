@@ -12,12 +12,12 @@ const HeaderSection = () => {
         <section className=" border border-gray-200">
             <div className="flex justify-between h-32 items-center  common-horizontal-padding">
                 {/* subtitle  */}
-                <h1 className=" text-4xl font-bold">
+                <h1 className=" text-3xl font-semibold lg:text-4xl sm:font-bold">
                     Pick the Website Template You Love
                 </h1>
 
                 {/* search bar  */}
-                <div className={` relative transition-all duration-300 h-12 ${isFocused?`w-96`:`w-72`}`}>
+                <div className={`hidden lg:block relative transition-all duration-300 h-12 ${isFocused?`w-96`:`w-72`}`}>
                     <input
                         type="text"
                         placeholder="Search all templates.."

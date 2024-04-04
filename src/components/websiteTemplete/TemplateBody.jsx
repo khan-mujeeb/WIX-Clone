@@ -1,9 +1,6 @@
-
-// import assets 
+// import assets
 import { template } from "../../data/index.js";
 import OverLay from "../common/OverLay.jsx";
-
-
 
 const TemplateBody = () => {
     return (
@@ -13,16 +10,18 @@ const TemplateBody = () => {
                     key={index}
                     className="relative bg-white shadow-mdh-56 group"
                 >
-                    <img className="w-full h-full shadow-md" src={template[index].image} alt="template" />
+                    <img
+                        className="w-full h-full shadow-md"
+                        src={template[index].image}
+                        alt="template"
+                    />
 
                     {/* overlay components that will be displayed on hover */}
-                    <OverLay/>
+                    <OverLay />
 
                     <p className=" mt-4">{template[index].name}</p>
                 </div>
             ))}
-
-            
         </div>
     );
 };
